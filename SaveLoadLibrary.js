@@ -37,7 +37,6 @@ const SaveLoadLibrary = {
     ping: function () {
         return 'Ping';
     },
-  };
-  
-  // Export the library for use in other scripts
-  export default SaveLoadLibrary;
+};
+
+// SaveLoadLibrary is now a global variable
