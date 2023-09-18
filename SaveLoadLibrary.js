@@ -33,6 +33,10 @@ const SaveLoadLibrary = {
         console.error('Error clearing data from localStorage:', error);
       }
     },
+
+    ping: function () {
+        return 'Ping';
+    },
   };
   
   // Export the library for use in other scripts
