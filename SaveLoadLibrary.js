@@ -1,7 +1,7 @@
 // SaveLoadLibrary.js
 
-// Define your library object
-const SaveLoadLibrary = {
+// Define your library object as a property of the global window object
+window.SaveLoadLibrary = {
     save: function (key, data) {
       try {
         const jsonData = JSON.stringify(data);
@@ -33,10 +33,8 @@ const SaveLoadLibrary = {
         console.error('Error clearing data from localStorage:', error);
       }
     },
-
+  
     ping: function () {
-        return 'Ping';
-    },
-};
-
-// SaveLoadLibrary is now a global variable
+      return 'Ping';
+    }
+  };
